@@ -17,26 +17,17 @@ High-speed Instagram followers scraper using:
 insta_followers_scraper/
 │
 ├── insta_followers_scraper.exe
-├── requirements.txt
-└── .env
+├── .env
+└── README.md
 ```
 
-These are the ONLY files present initially.
+These are the ONLY files initially present.
 
-Everything else is automatically generated.
+Everything else is automatically generated during execution.
 
 ---
 
-# 1. Clone Repository
-
-```bash
-git clone <repo_url>
-cd insta_followers_scraper
-```
-
----
-
-# 2. Install Python
+# 1. Install Python
 
 Install Python 3.10+:
 
@@ -50,7 +41,7 @@ During installation ENABLE:
 Add Python to PATH
 ```
 
-Verify:
+Verify installation:
 
 ```bash
 python --version
@@ -58,39 +49,17 @@ python --version
 
 ---
 
-# 3. Create Virtual Environment
+# 2. Install Playwright
 
-## Windows
-
-```bash
-python -m venv venv
-```
-
-Activate:
+Open terminal / PowerShell:
 
 ```bash
-venv\Scripts\activate
-```
-
-You should now see:
-
-```text
-(venv)
-```
-
-in terminal.
-
----
-
-# 4. Install Dependencies
-
-```bash
-pip install -r requirements.txt
+pip install playwright
 ```
 
 ---
 
-# 5. Install Chromium
+# 3. Install Chromium
 
 Install Playwright Chromium browser:
 
@@ -104,7 +73,7 @@ NO manual Chrome installation required.
 
 ---
 
-# 6. Configure `.env`
+# 4. Configure `.env`
 
 Edit `.env`
 
@@ -128,21 +97,23 @@ OUTPUT_FOLDER=followers_list
 
 ---
 
-# 7. Run Scraper
+# 5. Run Scraper
 
-```bash
-insta_followers_scraper.exe
-```
-
-OR
+## Windows PowerShell
 
 ```bash
 .\insta_followers_scraper.exe
 ```
 
+## CMD
+
+```bash
+insta_followers_scraper.exe
+```
+
 ---
 
-# 8. Login To Instagram
+# 6. Login To Instagram
 
 Chromium browser opens automatically.
 
@@ -160,9 +131,9 @@ The scraper automatically detects successful login.
 
 ---
 
-# 9. Scraping Starts Automatically
+# 7. Scraping Starts Automatically
 
-Example:
+Example output:
 
 ```text
 [INFO] Launching browser
@@ -183,7 +154,7 @@ Example:
 
 ---
 
-# 10. Output Files
+# 8. Output Files
 
 The scraper automatically creates:
 
@@ -204,7 +175,7 @@ Each batch file is continuously updated while scraping progresses.
 
 ---
 
-# 11. JSON Format
+# 9. JSON Format
 
 ```json
 {
@@ -215,9 +186,9 @@ Each batch file is continuously updated while scraping progresses.
 
 ---
 
-# 12. Auto Generated Files
+# 10. Auto Generated Files
 
-These are created automatically during execution:
+These are automatically created during execution:
 
 ```text
 checkpoint.txt
@@ -232,9 +203,9 @@ DO NOT DELETE them if you want:
 
 ---
 
-# 13. Resume Scraper
+# 11. Resume Scraper
 
-If scraper stops/crashes:
+If scraper crashes/stops:
 
 ```bash
 .\insta_followers_scraper.exe
@@ -244,7 +215,7 @@ It automatically resumes from previous checkpoint.
 
 ---
 
-# 14. Stop Scraper
+# 12. Stop Scraper
 
 Press:
 
@@ -254,7 +225,7 @@ CTRL + C
 
 ---
 
-# 15. Common Errors
+# 13. Common Errors
 
 ## playwright not found
 
@@ -302,7 +273,7 @@ The scraper automatically retries.
 
 ---
 
-# 16. Recommended Settings
+# 14. Recommended Settings
 
 ```env
 FETCH_COUNT=200
@@ -312,7 +283,7 @@ REQUEST_DELAY=0.3
 
 ---
 
-# 17. Estimated Speed
+# 15. Estimated Speed
 
 Approximate:
 
