@@ -1,0 +1,6 @@
+playwright
+requests
+orjson
+pyarmor
+pyinstaller
+python-dotenv
